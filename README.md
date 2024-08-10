@@ -7,23 +7,25 @@
 
 
 # CCNA_Basic-lab
-configuration router and switch
+
+# configuration router and switch
 
 # Network Topology for one Router one Switch and two Work stations.
 
-##Switch configuration##
+# Switch configuration
 
-## enable
+ enable
 
-## configure terminal
+ configure terminal
 
-## Turnoff Domain name
-## no ip domain-lookup
+Turnoff Domain name
+ no ip domain-lookup
 ## set Hostname SW1 
 hostname SW1
 ## Create password encrypted
 
 enable secret cisco
+
 ## create line console password
 
 line console 0
@@ -37,6 +39,7 @@ password switch
 exec-timeout 0 0
 
 exit
+
 ## create line aux password
 
 line aux 0
@@ -56,6 +59,7 @@ login
 password cisco
 
 exit
+
 ## Sets ip address and netmask for Switch
 
 interface vlan 1
